@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.checkmark {
+  position: absolute;
+  rotate: 45deg;
+  left: 40%;
+  top: 25%;
+  height: 12px;
+  width: 6px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+form {
+  background-color: #eaf5f3;
+  padding: 10px;
+  border-bottom: 1px solid #a0b6c9;
+  gap: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5px;
+}
+
+li {
+  position: relative;
+}
+
+ul div:nth-child(2n) {
+  background-color: #eaf5f3;
+}
+
+ul div:nth-child(1n) {
+  border-top: 1px solid #def0ec;
+}
+
+.span1 {
+  position: absolute;
+  left: 2%;
+}
+
+.span2 {
+  position: absolute;
+  right: 25%;
+}
+
+.span3 {
+  position: absolute;
+  right: 7%;
+  background-color: #ecce9d;
+  font-size: 10px;
+  padding: 2px;
+  margin-top: 2px;
+  border-radius: 5px;
+  color: #a04b18;
+  max-width: 50px;
+}
+
+.incomesContainer {
+  position: relative;
+  top: 50px;
+  width: 300px;
+  height: 30px;
+  background-color: #2b507f;
+  color: white;
+}
+
+.incomesDescription {
+  position: absolute;
+  left: 2%;
+}
+
+.incomesValue {
+  position: absolute;
+  right: 25%;
+}
+
+.income {
+  color: #2b507f;
+}
+
+.expensesContainer {
+  position: relative;
+  top: 60px;
+  width: 300px;
+  height: 30px;
+  background-color: #a04b18;
+  color: white;
+}
+
+.expensesDescription {
+  position: absolute;
+  left: 2%;
+}
+
+.expensesValue {
+  position: absolute;
+  right: 25%;
+}
+
+.expense {
+  color: #a04b18;
+}
+
+.expensesPercent {
+  position: absolute;
+  right: 7%;
+  background-color: #b36f46;
+  font-size: 10px;
+  max-width: 50px;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+}
+
+.icon {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  display: none;
+  color: black;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+ul div:hover .icon {
+  display: block;
+}
