@@ -42,8 +42,11 @@ export const BudgetProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("listOfIncomes", JSON.stringify(incomes));
+  }, [incomes]);
+
+  useEffect(() => {
     localStorage.setItem("listOfExpenses", JSON.stringify(expenses));
-  }, [incomes, expenses]);
+  }, [expenses]);
 
   const totalIncomes = () => {
     let total = 0;
